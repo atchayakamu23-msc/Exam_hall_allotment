@@ -1,0 +1,173 @@
+/* ================= GLOBAL ================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* ================= NAVBAR (FIXED) ================= */
+.navbar {
+    background-color: #2c3e50 !important;
+    padding: 0.8rem 0;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.8) !important;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+}
+
+.nav-link.active {
+    color: #fff !important;
+    border-bottom: 2px solid #fff;
+}
+
+/* ================= HERO ================= */
+.hero-section {
+    background: linear-gradient(135deg, #2c3e50, #1a252f);
+    color: #fff;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-section p {
+    opacity: 0.9;
+}
+
+/* ================= BUTTONS ================= */
+.btn-primary {
+    background-color: #2c3e50;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #1a252f;
+}
+
+.btn-light {
+    background-color: #fff;
+    color: #2c3e50;
+}
+
+/* ================= FEATURE CARDS ================= */
+.feature-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card i {
+    color: #2c3e50;
+}
+
+/* ================= STATS ================= */
+.stat-card {
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+/* ================= LOGIN ================= */
+.login-card {
+    max-width: 400px;
+    margin: auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    border-top: 5px solid #2c3e50;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ================= DARK HOME ================= */
+body.dark-home {
+    background: linear-gradient(135deg, #2c3e50, #1a252f);
+    color: #fff;
+}
+
+body.dark-home .feature-card {
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+    backdrop-filter: blur(10px);
+}
+
+body.dark-home .stat-card {
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+}
+
+/* ================= LOGIN PAGE ================= */
+body.login-page {
+    background: white;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ================= SCROLLBAR ================= */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2c3e50;
+}
+/* ================= INDEX BACKGROUND ================= */
+body.index-bg {
+    background: url('../images/exam.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Optional dark overlay for readability */
+body.index-bg::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+    z-index: -1;
+}
+
+/* ================= TRANSPARENT NAVBAR FOR INDEX ================= */
+.navbar-transparent {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Make text visible on background */
+.navbar-transparent .nav-link,
+.navbar-transparent .navbar-brand {
+    color: #fff !important;
+}
+
+/* Optional hover effect */
+.navbar-transparent .nav-link:hover {
+    color: #ddd !important;
+}
